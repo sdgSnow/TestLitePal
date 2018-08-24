@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void update(){
         ContentValues values = new ContentValues();
         values.put("name", "这是修改操作");
+        Log.i("test","测试提交");
         LitePal.updateAll(Person.class, values);
     }
     public void check(){
